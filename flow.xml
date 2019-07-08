@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:activiti="http://activiti.org/bpmn" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" typeLanguage="http://www.w3.org/2001/XMLSchema" expressionLanguage="http://www.w3.org/1999/XPath" targetNamespace="http://activiti.org/bpmn" id="Definitions_1">
+    <process id="_d5df0943-d24e-42ca-86aa-51b679ba3af9" isExecutable="true">
+        <startEvent id="_0304a97c-67a9-4fc2-8c9a-472f1535093f"/>
+        <endEvent id="_ef633c07-e4ec-45bf-9721-72bdf7d53fac"/>
+        <receiveTask id="_5273d475-f338-449f-a78a-a61530641a00" name="创建虚拟机"/>
+        <receiveTask id="_5457c022-723b-42f7-b2dd-753b8a49b6ee" name="查询虚拟机状态"/>
+        <receiveTask id="_9648abcb-e00a-46a5-a5e1-7e0d535409e9" name="休眠计数"/>
+        <sequenceFlow id="_0304a97c-67a9-4fc2-8c9a-472f1535093f-_5273d475-f338-449f-a78a-a61530641a00" sourceRef="_0304a97c-67a9-4fc2-8c9a-472f1535093f" targetRef="_5273d475-f338-449f-a78a-a61530641a00"/>
+        <sequenceFlow id="_5457c022-723b-42f7-b2dd-753b8a49b6ee-_606934db-45a8-4caa-a432-ac08339d16fa" sourceRef="_5457c022-723b-42f7-b2dd-753b8a49b6ee" targetRef="_606934db-45a8-4caa-a432-ac08339d16fa"/>
+        <sequenceFlow id="_606934db-45a8-4caa-a432-ac08339d16fa-_9648abcb-e00a-46a5-a5e1-7e0d535409e9" sourceRef="_606934db-45a8-4caa-a432-ac08339d16fa" targetRef="_9648abcb-e00a-46a5-a5e1-7e0d535409e9">
+            <conditionExpression>e512df709fced4fc74477feb0681d07c</conditionExpression>
+        </sequenceFlow>
+        <sequenceFlow id="_9648abcb-e00a-46a5-a5e1-7e0d535409e9-_5457c022-723b-42f7-b2dd-753b8a49b6ee" sourceRef="_9648abcb-e00a-46a5-a5e1-7e0d535409e9" targetRef="_5457c022-723b-42f7-b2dd-753b8a49b6ee"/>
+        <sequenceFlow id="_5273d475-f338-449f-a78a-a61530641a00-_5457c022-723b-42f7-b2dd-753b8a49b6ee" sourceRef="_5273d475-f338-449f-a78a-a61530641a00" targetRef="_5457c022-723b-42f7-b2dd-753b8a49b6ee"/>
+        <sequenceFlow id="_606934db-45a8-4caa-a432-ac08339d16fa-_ef633c07-e4ec-45bf-9721-72bdf7d53fac" sourceRef="_606934db-45a8-4caa-a432-ac08339d16fa" targetRef="_ef633c07-e4ec-45bf-9721-72bdf7d53fac">
+            <conditionExpression>2ff7d1653356eaf0effd9b25e9ceaf2d</conditionExpression>
+        </sequenceFlow>
+        <exclusiveGateway id="_606934db-45a8-4caa-a432-ac08339d16fa" name="gateway"/>
+    </process>
+</definitions>
